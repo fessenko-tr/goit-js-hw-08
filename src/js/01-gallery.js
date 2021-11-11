@@ -24,3 +24,5 @@ alt="${description}"/>
 function addItemsToGallery(pics, gallery) {
   gallery.innerHTML = pics.map(createPicMarkup).join('');
 }
+
+console.log('questions>?');

@@ -1,8 +1,8 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
-// Дополнительный импорт стилей
 import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const galleryContainerRef = document.querySelector('.gallery');
 
 addItemsToGallery(galleryItems, galleryContainerRef);
@@ -24,5 +24,3 @@ alt="${description}"/>
 function addItemsToGallery(pics, gallery) {
   gallery.innerHTML = pics.map(createPicMarkup).join('');
 }
-
-console.log('questions>?');

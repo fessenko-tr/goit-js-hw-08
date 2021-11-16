@@ -1,4 +1,4 @@
-import { saveToStorage, loadFromStorage } from './localStorageFuncs';
+import { saveToStorage, loadFromStorage } from './local-storage-funcs';
 import lodash from 'lodash';
 
 const refs = {

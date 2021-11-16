@@ -12,4 +12,8 @@ function loadFromStorage(key) {
   } catch (error) {}
 }
 
-export { saveToStorage, loadFromStorage };
+function removeFromStorage(key) {
+  localStorage.removeItem(key);
+}
+
+export { saveToStorage, loadFromStorage, removeFromStorage };

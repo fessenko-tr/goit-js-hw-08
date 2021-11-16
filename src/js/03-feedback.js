@@ -10,8 +10,8 @@ const refs = {
 const CURRENT_FORM_VALUE = 'feedback-form-state';
 const throttle = lodash._.throttle;
 const savedFormData = loadFromStorage(CURRENT_FORM_VALUE);
-let email;
-let text;
+let email = '';
+let text = '';
 
 if (savedFormData) {
   const { email: email = '', text: text = '' } = loadFromStorage(CURRENT_FORM_VALUE);
@@ -39,5 +39,7 @@ function onBtnClick(e) {
   refs.inputReff.value = '';
   refs.textareaReff.value = '';
   console.log(loadFromStorage(CURRENT_FORM_VALUE));
+  email = '';
+  text = '';
   localStorage.removeItem(CURRENT_FORM_VALUE);
 }

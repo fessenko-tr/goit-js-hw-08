@@ -1,5 +1,5 @@
 import Vimeo from '@vimeo/player';
-import { saveToStorage, loadFromStorage } from './localStorageFuncs';
+import { saveToStorage, loadFromStorage } from './local-storage-funcs';
 import lodash from 'lodash';
 
 const CURRENT_TIME_KEY = 'videoplayer-current-time';
